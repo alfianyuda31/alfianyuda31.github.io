@@ -1,0 +1,82 @@
+:root {
+  --mainColor: #252734;
+  --secondaryColor: #333646;
+  --acsentColor: #ff9100;
+}
+
+/* Navbar */
+.navbar-porto {
+  padding-top: 15px;
+  border: solid 2px green;
+  background-color: var(--mainColor) !important;
+}
+@media (min-width: 992px) {
+  .navbar-porto .nav-item .nav-link {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.navbar-porto .nav-link.active {
+  color: var(--acsentColor) !important;
+  font-weight: 700;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: var(--secondaryColor) !important;
+  transition: background-color 200ms linear;
+}
+/* End of Navbar */
+
+/* Body */
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: var(--mainColor);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body .page-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-top: 100px;
+  margin: 0;
+  padding: 0;
+}
+/* Section */
+section {
+  margin: 0;
+  padding: 0;
+}
+section h1,
+section .h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+/* End of Section */
+
+/* Hero */
+#hero {
+  padding-top: 100px;
+  color: #fff;
+  min-height: 100vh;
+}
+#hero h1,
+#hero .h1 {
+  font-size: 3rem;
+}
+#hero h2,
+#hero .h2 {
+  font-weight: 300;
+}
+#hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+#hero .color-acsent {
+  color: var(--acsentColor);
+}
+/* End of Body */
